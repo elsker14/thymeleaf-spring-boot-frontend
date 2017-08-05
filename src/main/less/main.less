@@ -1,0 +1,153 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Aug 1, 2017, 11:31:21 AM
+    Author     : marcos
+*/
+
+/*
+COLORS
+$color1: rgba(76, 87, 96, 1); //GRAY
+$color2: rgba(53, 86, 146, 1);//blue
+$color3: rgba(148, 147, 150, 1);//GRAY2
+$color4: rgba(171, 168, 178, 1);//cinza claro
+$color5: rgba(195, 195, 195, 1);//cinza mais claro
+*/
+
+@color_blue: rgba(53, 86, 146, 1);//blue
+@color_gray: rgba(76, 87, 96, 1); //GRAY
+@color_gray2: rgba(148, 147, 150, 1);//GRAY2
+@color_gray3: rgba(171, 168, 178, 1);//cinza claro
+@color_gray4: rgba(195, 195, 195, 1);//cinza mais claro
+
+@color_blue_background: @color_blue;
+@color_blue_link: @color_gray4;
+@color_blue_hover: @color_gray;
+@color_blue_focus: @color_blue;
+@color_blue_active: @color_gray4;
+
+@color_content: white;
+
+@main_margin: 200px;//margem direita do conteúdo main e foot quando o menu lateral aparece
+
+.blue_style_link{
+    a{
+        color:@color_blue_link;
+    }
+    a:focus{
+        background-color: @color_blue_background;
+    }
+    a:hover{
+        background-color: @color_blue_hover;
+    }
+}
+.blue_style{
+    background-color: @color_blue_background;
+    .blue_style_link;
+    >ul>li{
+        .blue_style_link;
+    }
+}
+
+/*
+.menu li>a{
+    color:@color_blue_link;
+}*/
+/*
+.menu li>a:focus{
+    background-color:@color_blue_background;
+}
+
+.menu li>a:hover{
+    background-color: rgba(76, 87, 96, 1);
+}*/
+
+.navbar-principal{
+    background-color: @color_blue_background;
+    border-radius: 0px;
+    margin-bottom: 0px;
+    .blue_style;
+}
+
+#container-background{
+    background-color:@color_blue_background;
+}
+
+main{
+    background-color:@color_content;
+    padding-top: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.footer-hr{
+    padding:0px 25px;
+    hr{
+        border-top: 2px @color_gray4 solid;
+    }
+}
+#btn_exibir_menu{
+    &:hover, :focus, :active{
+        background-color:@color_blue_hover;
+    }
+}
+
+#btn_exibir_menu>span{
+    background-color:@color_blue_link;
+    /*    &:active{
+            background-color: @color_blue_background;
+        }*/
+}
+
+@media (min-width: 768px){
+    main, footer, footer.container-fluid, .footer-hr{
+        margin-left: @main_margin;
+    }
+    .menu-principal{
+        display: block;
+    }
+    .menu-secundario{
+        display: none;
+    }
+    .navbar-collapse.collapse.menu-secundario{
+        display: none !important;
+    }
+}
+
+@media (max-width: 768px){
+    main, footer, footer.container-fluid, .footer-hr{
+        margin-left: 0px;
+    }
+    .menu-principal{
+        display: none;
+    }
+}
+
+.menu{
+    background-color: @color_blue_background;
+    padding-left: 25px;
+    padding-right: 25px;
+    .blue_style;
+}
+#btn_exibir_menu{
+    border-color:@color_blue_link;
+    .blue_style;
+}
+.menu-principal{
+    bottom: 0px;
+    top: 50px;
+    position: absolute;
+    left: 0px;
+    width: 200px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    border-radius: 0px;
+}
+
+.menu-secundario>ul{
+    padding: 25px;
+}
+

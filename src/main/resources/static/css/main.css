@@ -1,0 +1,195 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Aug 1, 2017, 11:31:21 AM
+    Author     : marcos
+*/
+/*
+COLORS
+$color1: rgba(76, 87, 96, 1); //GRAY
+$color2: rgba(53, 86, 146, 1);//blue
+$color3: rgba(148, 147, 150, 1);//GRAY2
+$color4: rgba(171, 168, 178, 1);//cinza claro
+$color5: rgba(195, 195, 195, 1);//cinza mais claro
+*/
+.blue_style_link a {
+  color: #c3c3c3;
+}
+.blue_style_link a:focus {
+  background-color: #355692;
+}
+.blue_style_link a:hover {
+  background-color: #4c5760;
+}
+.blue_style {
+  background-color: #355692;
+}
+.blue_style a {
+  color: #c3c3c3;
+}
+.blue_style a:focus {
+  background-color: #355692;
+}
+.blue_style a:hover {
+  background-color: #4c5760;
+}
+.blue_style > ul > li a {
+  color: #c3c3c3;
+}
+.blue_style > ul > li a:focus {
+  background-color: #355692;
+}
+.blue_style > ul > li a:hover {
+  background-color: #4c5760;
+}
+/*
+.menu li>a{
+    color:@color_blue_link;
+}*/
+/*
+.menu li>a:focus{
+    background-color:@color_blue_background;
+}
+
+.menu li>a:hover{
+    background-color: rgba(76, 87, 96, 1);
+}*/
+.navbar-principal {
+  border-radius: 0px;
+  margin-bottom: 0px;
+  background-color: #355692;
+}
+.navbar-principal a {
+  color: #c3c3c3;
+}
+.navbar-principal a:focus {
+  background-color: #355692;
+}
+.navbar-principal a:hover {
+  background-color: #4c5760;
+}
+.navbar-principal > ul > li a {
+  color: #c3c3c3;
+}
+.navbar-principal > ul > li a:focus {
+  background-color: #355692;
+}
+.navbar-principal > ul > li a:hover {
+  background-color: #4c5760;
+}
+#container-background {
+  background-color: #355692;
+}
+main {
+  background-color: #ffffff;
+  padding-top: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.footer-hr {
+  padding: 0px 25px;
+}
+.footer-hr hr {
+  border-top: 2px #c3c3c3 solid;
+}
+#btn_exibir_menu:hover,
+#btn_exibir_menu :focus,
+#btn_exibir_menu :active {
+  background-color: #4c5760;
+}
+#btn_exibir_menu > span {
+  background-color: #c3c3c3;
+  /*    &:active{
+            background-color: @color_blue_background;
+        }*/
+}
+@media (min-width: 768px) {
+  main,
+  footer,
+  footer.container-fluid,
+  .footer-hr {
+    margin-left: 200px;
+  }
+  .menu-principal {
+    display: block;
+  }
+  .menu-secundario {
+    display: none;
+  }
+  .navbar-collapse.collapse.menu-secundario {
+    display: none !important;
+  }
+}
+@media (max-width: 768px) {
+  main,
+  footer,
+  footer.container-fluid,
+  .footer-hr {
+    margin-left: 0px;
+  }
+  .menu-principal {
+    display: none;
+  }
+}
+.menu {
+  padding-left: 25px;
+  padding-right: 25px;
+  background-color: #355692;
+}
+.menu a {
+  color: #c3c3c3;
+}
+.menu a:focus {
+  background-color: #355692;
+}
+.menu a:hover {
+  background-color: #4c5760;
+}
+.menu > ul > li a {
+  color: #c3c3c3;
+}
+.menu > ul > li a:focus {
+  background-color: #355692;
+}
+.menu > ul > li a:hover {
+  background-color: #4c5760;
+}
+#btn_exibir_menu {
+  border-color: #c3c3c3;
+  background-color: #355692;
+}
+#btn_exibir_menu a {
+  color: #c3c3c3;
+}
+#btn_exibir_menu a:focus {
+  background-color: #355692;
+}
+#btn_exibir_menu a:hover {
+  background-color: #4c5760;
+}
+#btn_exibir_menu > ul > li a {
+  color: #c3c3c3;
+}
+#btn_exibir_menu > ul > li a:focus {
+  background-color: #355692;
+}
+#btn_exibir_menu > ul > li a:hover {
+  background-color: #4c5760;
+}
+.menu-principal {
+  bottom: 0px;
+  top: 50px;
+  position: absolute;
+  left: 0px;
+  width: 200px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  border-radius: 0px;
+}
+.menu-secundario > ul {
+  padding: 25px;
+}
+
